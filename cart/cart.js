@@ -113,6 +113,26 @@ function Removeitem(e) {
         // console.log(e.target.parentElement.previousElementSibling.id);
         localStorage.setItem("x", e.target.parentElement.previousElementSibling.id)
     }
+
+    let bag = document.querySelector(".bag");
+    let cart=JSON.parse(localStorage.getItem("a"))
+    bag.innerText=cart.length
+    
+    let Totalprice = document.querySelector(".counter");
+    let TotalPeoduct=JSON.parse(localStorage.getItem("apiData"))
+    let headerprice = 0
+    cart.forEach((element) => {
+        TotalPeoduct.forEach((e) => {
+            if (element.id == e.id) {
+                headerprice += (e.price * element.qut)
+            }
+    
+        })
+    
+    })
+    
+    // console.log(headerprice)
+    Totalprice.innerText=headerprice
 }
 
 CouponCodebtn.addEventListener("click", applyCoupon)

@@ -60,18 +60,25 @@ function loginuser(el){
             // alert("loggin successfull")
             v++
 
-            userpage.innerHTML=`
-            <section class="profile">
+            window.location.href="http://127.0.0.1:5500/home/home.html"
 
-            <h1>Welcome ${(e.emailId.slice(0,-10))}</h1>
-              </section>
+            let z= e.emailId.slice(0,-10)
+
+            localStorage.setItem("userName",z)
+            // console.log(z)
+            
+            // userpage.innerHTML=`
+            // <section class="profile">
+
+            // <h1>Welcome ${(e.emailId.slice(0,-10))}</h1>
+            //   </section>
         
-            `
+            // `
 
-            console.log(el.target)
+            // console.log(el.target)
             // console.log("done")
             // e.target.setAttribute("href","./myaccount.html")
-            console.log(el.target)
+            // console.log(el.target)
         }
         // console.log("dgff")
     })
