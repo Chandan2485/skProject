@@ -5,7 +5,7 @@
 }
 
 .container {
-    max-width: 98vw;
+    max-width: 100vw;
 }
 
 .nav {
@@ -167,8 +167,6 @@ span {
 .user {
     padding: 4px 9px;
     border-right: 1px solid lightgray;
-    font-size: 13px;
-    color: white;
 }
 
 .bag {
@@ -223,49 +221,14 @@ span {
 }
 
 
-/* ================================ above part of footer ======================= */
 
-.big-box{
-    margin-top: 10px;
-    width: 100vw;
-    padding: 10px 15px;
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px solid grey;
-    font-size: 13px;
-}
-
-.map{
-    font-size: 15px;
-    color: grey;
-}
-
-.first-box{
-    width: 180px;
-    display: flex;
-    justify-content: space-around;
-    margin-left: 10px;
-    align-items: center;
-}
-
-.second-box{
-    width: 280px;
-    display: flex;
-    justify-content: space-around;
-    margin-right: 100px;
-    align-items: center;
-}
-
-.first-box p, .second-box p{
-    color: grey;
-    font-size: 12px;
-}
 
 /*============================================== footer part =================================================================== */
 
 .footerbox {
     display: flex;
     justify-content: space-between;
+    margin-top: 150px;
     width: 100vw;
     padding: 25px;
     background-color: rgba(0, 0, 0, 0.932);
@@ -328,5 +291,9 @@ span {
 .about{
     margin-top: 25px;
     font-size: 11px;
+    color: white;
+}
+
+.fa-user{
     color: white;
 }

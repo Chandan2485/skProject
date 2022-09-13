@@ -50,7 +50,7 @@ LogInbtn.addEventListener("click",loginuser)
 
 function loginuser(el){
     let v=0
-    logEmail=document.querySelector("#login-email").value
+    logEmail=document.querySelector("#login-email").value.trim()
     logpass=document.querySelector("#login-pass").value
     let udata= JSON.parse(localStorage.getItem("user"))
     // console.log(logEmail,logpass)
@@ -63,7 +63,7 @@ function loginuser(el){
             userpage.innerHTML=`
             <section class="profile">
 
-            <h1>Thank You ${(e.emailId.slice(0,-10))}</h1>
+            <h1>Welcome ${(e.emailId.slice(0,-10))}</h1>
               </section>
         
             `

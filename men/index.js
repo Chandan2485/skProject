@@ -1,4 +1,5 @@
 let productBox = document.querySelector(".product-box")
+
 let Sdata = localStorage.getItem("apiData")
 let data = JSON.parse(Sdata)
 let i=0
@@ -9,16 +10,17 @@ function showProduct() {
     //  .then(response=>response.json())//text --> json
     //  .then(data=>{
     data.forEach((e) => {
-
+        if(e.Genders=="m"){
         productBox.innerHTML += `
             <div class="product">
                     <a href="../productInfo/productDetail.html"><img src="${e.category.image}" alt="" class="click changeimg" id="${e.id}"></a> 
                     <p class="p-type">${e.brand}</p>
                     <p class="s-product-brand">${e.category.name}</p>
-                    <a href="../productInfo/productDetail.html" class="click p-title" id="${e.id}">${e.title}</a>
-                    <p class="p_prices">₹${e.price}</p>
+                    <a href="../productInfo/productDetail.html" class="click" id="${e.id}">${e.title}</a>
+                    <p>${e.price}</p>
                 </div>
             `
+        }
     })
 }
 showProduct()
