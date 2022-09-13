@@ -24,11 +24,11 @@
     margin-right: 20px;
 }
 
-ul {
+.nav ul {
     display: flex;
 }
 
-li {
+.nav li {
     list-style-type: none;
     font-size: 10px;
     cursor: pointer;

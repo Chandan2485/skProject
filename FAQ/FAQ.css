@@ -36,7 +36,7 @@
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 1.4rem;
     font-weight: 500;
 }
 
@@ -47,7 +47,7 @@ h3 {
     color: grey;
     line-height: 16px;
     display: none;
-    font-size: 13px;
+    font-size: 1.2rem;
 }
 
 .show-text .answer {
@@ -63,7 +63,7 @@ h3 {
 }
 
 .question-btn {
-    font-size: 10px;
+    font-size: 1rem;
     border: none;
     cursor: pointer;
     background-color: white;
@@ -80,6 +80,7 @@ h3 {
 .with-heading-para {
     color: grey;
     margin-bottom: 10px;
+    font-size: 1rem;
 }
 
 .border {
