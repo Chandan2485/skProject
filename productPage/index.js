@@ -1,9 +1,10 @@
 let productBox = document.querySelector(".product-box")
+let sortbyPrice=document.querySelector(".search-filter")
 let Sdata = localStorage.getItem("apiData")
 let data = JSON.parse(Sdata)
 let i=0
 
-function showProduct() {
+function showProduct(data) {
 
     // fetch(`https://api.escuelajs.co/api/v1/products`)
     //  .then(response=>response.json())//text --> json
@@ -21,7 +22,7 @@ function showProduct() {
             `
     })
 }
-showProduct()
+showProduct(data)
 
 
 function changeImage(e) {
@@ -52,5 +53,9 @@ function productShow(e) {
     }
 }
 productBox.addEventListener("click", productShow)
+
+// console.log(sortbyPrice);
+
+// sortbyPrice.addEventListener("click",sortproduct)
 
 

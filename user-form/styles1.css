@@ -124,3 +124,16 @@ a {
     align-items: center;
     font-size: 50px;
 }
+
+.login-heading-message{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login-message{
+    width: 300px;
+    text-align: center;
+    margin-right: 120px;
+    /* border: 1px solid black; */
+    font-weight: bold;
+}
