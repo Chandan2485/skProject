@@ -1,6 +1,8 @@
 let registerbtn= document.querySelector("#Resister-btn")
 let LogInbtn= document.querySelector("#LogIn-btn")
 let userpage=document.querySelector(".container1")
+let loginmessage=document.querySelector(".login-message")
+// console.log(loginmessage)
 
 
 let userArr=[]
@@ -15,11 +17,6 @@ function registeuser(){
     let flag=0
     let ur= JSON.parse(localStorage.getItem("user"))
     regEmail=document.querySelector("#resister-email")
-
-
-// @gmail.com
-
-
     if((regEmail.value).length>=11 && (regEmail.value).endsWith("@gmail.com")){
          // console.log(regEmail.value)
     ur.forEach(element => {
@@ -36,12 +33,21 @@ function registeuser(){
             password:passcode
         })
         localStorage.setItem("user",JSON.stringify(ur))
-        alert(`Register Successfully. Your Password is ${passcode} ` )
+        loginmessage.innerText=(`Register Successfully. Your Password is ${passcode} ` )
+        // setTimeout(() => {
+        //     loginmessage.innerText=null
+        // }, 2000);
     }else{
-        alert("already register")
+        loginmessage.innerText=("already register")
+    //     setTimeout(() => {
+    //         loginmessage.innerText=null
+    //     }, 2000);
     }
     }else{
-        alert("invalid")
+        loginmessage.innerText=("invalid")
+        // setTimeout(() => {
+        //     loginmessage.innerText=null
+        // }, 2000);
     }
    
 }
@@ -83,7 +89,10 @@ function loginuser(el){
         // console.log("dgff")
     })
     if(!v){
-        alert("invalid email or passcode")
+        loginmessage.innerText=("invalid email or passcode")
+        // setTimeout(() => {
+        //     loginmessage.innerText=null
+        // }, 2000);
     }
 
 }
