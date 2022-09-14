@@ -1839,3 +1839,7 @@ let api123 = [
 
 // }
 // xyz(str)
+
+//  console.log(api123.sort((a,b) => {
+//     return a.price-b.price
+//  }))
