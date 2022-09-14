@@ -9,7 +9,7 @@ function showProduct() {
     //  .then(response=>response.json())//text --> json
     //  .then(data=>{
     data.forEach((e) => {
-        if(e.Genders=="w"){
+        if(e.Genders=="w" && e.category.name=="Shoes"){
             productBox.innerHTML += `
             <div class="product">
                     <a href="../productInfo/productDetail.html"><img src="${e.category.image}" alt="" class="click changeimg" id="${e.id}"></a> 

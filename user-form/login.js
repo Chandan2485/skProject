@@ -60,7 +60,7 @@ function loginuser(el){
             // alert("loggin successfull")
             v++
 
-            window.location.href="http://127.0.0.1:5500/home/home.html"
+            window.location.href="http://127.0.0.1:5501/skProject/home/home.html"
 
             let z= e.emailId.slice(0,-10)
 

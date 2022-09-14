@@ -3,24 +3,24 @@ body{
     width: 75vw;
     font-family: sans-serif;
 }
-a{
+.aprivacy{
     text-decoration: none;
 }
 
-h1{
+.h1privacy{
     margin-top: 20px;
     margin-bottom: 50px;
     font-weight: lighter;
 }
 
-h2{
+.h2privacy{
     margin-top: 10px;
     margin-bottom: 70px;
     font-size: 50px;
     line-height: 1.5;
 }
 
-h3{
+.h3privacy{
     margin: 15px;
     font-size: 30px;
 }
@@ -30,23 +30,24 @@ p{
     line-height: 1.5;
     font-style: normal;
     text-align: justify;
+    margin: 0 0 1.41575em;
 }
 
-ul{
+.ulprivacy{
     margin: 15px;
 }
 
-article{
+.article1,.article2,.article3,.article4,.article5,.article6,.article7,.article8{
     line-height: 1.5;
     margin: 10px;
 }
 
-nav{
+.navprivacy{
     
     margin:10px ;
 }
 
-li{
+.liprivacy{
    
     margin-left: 25px;
 }

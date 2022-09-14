@@ -4,9 +4,47 @@
     box-sizing: border-box;
 }
 
+html {
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+	/* -ms-word-wrap: break-word;
+	word-wrap: break-word;  */
+	overflow-x: hidden;
+ }  
+ body, button, input, textarea {
+    line-height: 1.618;
+    text-rendering: optimizelegibility;
+}
+
+/* a {
+	color: #2c2d33;
+	background-color: transparent;
+	text-decoration: none;
+	transition: color 0.2s ease;
+}
+
+
+a:active,
+a:hover {
+	outline: 0;
+}
+
+
+a, button, input {
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+}  */
+
 .container {
     max-width: 100%;
 }
+
+/* footerbox container */
 
 .nav {
     display: flex;
@@ -235,8 +273,11 @@ span {
     display: flex;
     justify-content: space-between;
     margin-top: 150px;
+    /* align-items: center; */
     width: 100vw;
-    padding: 25px;
+    height: 400px;
+    /* font-size: 1rem; */
+    padding: 50px;
     background-color: rgba(0, 0, 0, 0.932);
     color: white;
 }
@@ -259,8 +300,8 @@ span {
 .footerbox a{
     text-decoration: none;
     color: rgb(161, 159, 159);
-    font-size: 12px;
-    line-height: 25px;
+    font-size: 1.5rem;
+    line-height: 2;
 }
 
 .footerbox .para{
@@ -270,7 +311,7 @@ span {
 }
 
 .footerbox p{
-    font-size: 10px;
+    font-size: 1rem;
     word-spacing: 5px;
     letter-spacing: 1px;
 }
@@ -304,3 +345,7 @@ span {
     color: white;
     /* margin: 0 7px; */
 }
+
+/* .footerbox{
+    font-size: 2em;
+} */
