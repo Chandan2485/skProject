@@ -7,7 +7,7 @@ let removebut2 = document.querySelector(".cancelation_btn2");
 let cartitmesv = document.querySelector(".delete_items");
 
 let subpcontainer = document.querySelector(".subbtn");
-let cartproduct = JSON.parse(localStorage.getItem("a"));
+letdata1 = JSON.parse(localStorage.getItem("a"));
 
 // console.log(cartproduct);
 let data1 = JSON.parse(localStorage.getItem("apiData"));
@@ -40,27 +40,27 @@ if(e.target.id==data1[i].id){
  
 
 
-// function showcart() {
-//  for(let i =0; i<datastorearr.length; i++){
-//   let popup = `
+function showcart() {
+ for(let i =0; i<datastorearr.length; i++){
+  let popup = `
     
-//        <div class="delete_items" >
-//        <h2 class="cancelation_btn2" onclick="removeitems(event)" value=${datastorearr[i].id}>${"&times;"}</h2>
-//            <p class="brandname">${datastorearr[i].title}</p>
-//            <a href="">
-//            <img class="finalbillcart" src="${datastorearr[i].category.image}" alt="">
-//            </a>
-//         </div>
+       <div class="delete_items" >
+       <h2 class="cancelation_btn2" onclick="removeitems(event)" value=${datastorearr[i].id}>${"&times;"}</h2>
+           <p class="brandname">${datastorearr[i].title}</p>
+           <a href="">
+           <img class="finalbillcart" src="${datastorearr[i].category.image}" alt="">
+           </a>
+        </div>
 
      
-//        `;
-//        checkout_content.innerHTML += popup;
-//       }
-//  }
+       `;
+       checkout_content.innerHTML += popup;
+      }
+ }
       
   
 
-// showcart();
+showcart();
 
 addcbtn.addEventListener("click", showpoup);
 
@@ -79,61 +79,61 @@ function hidepopup() {
 
 // function removeitems(event) {
 //   console.log(event.id);
-//   // cartproduct.forEach((element) => {
-//   //   if (element.id == event.target.id) {
-//   //     newArr = cartproduct.filter((x) => x.id != event.target.id);
-//   //     cartproduct = newArr;
+  //data1.forEach((element) => {
+  //   if (element.id == event.target.id) {
+  //     newArr =data1.filter((x) => x.id != event.target.id);
+  //    data1 = newArr;
 
-//   //     let str1 = JSON.stringify(newArr);
-//   //     localStorage.setItem("a", str1);
+  //     let str1 = JSON.stringify(newArr);
+  //     localStorage.setItem("a", str1);
 
-//   //     cartitmesv.innerHTML = "";
-//   //     checkout_container.innerHTML = "";
-//   //   } else if (event.target.src) {
-//   //     localStorage.setItem(
-//   //       "x",
-//   //       event.target.parentElement.previousElementSibling.id
-//   //     );
-//   //   }
-//   // });
-//   newArr = cartproduct.filter((x) => x.id != event.target.id);
-//   cartproduct = newArr;
+  //     cartitmesv.innerHTML = "";
+  //     checkout_container.innerHTML = "";
+  //   } else if (event.target.src) {
+  //     localStorage.setItem(
+  //       "x",
+  //       event.target.parentElement.previousElementSibling.id
+  //     );
+  //   }
+  // });
+//   newArr =data1.filter((x) => x.id != event.target.id);
+//  data1 = newArr;
 
 //   let str1 = JSON.stringify(newArr);
 //   localStorage.setItem("a", str1);
 
-//   // cartitmesv.innerHTML = "";
-//   // checkout_container.innerHTML = "";
+  // cartitmesv.innerHTML = "";
+  // checkout_container.innerHTML = "";
 //   showcart();
 // }
 
 // removeitems()
 
-// function showsubtotalcart() {
-//   let sprice = 0;
+function showsubtotalcart() {
+  let sprice = 0;
 
-//   cartproduct.forEach((element) => {
-//     data1.forEach((event) => {
-//       if (element.id == event.id) {
-//         sprice += event.price * element.qut;
-//       }
-//     });
-//   });
+ data1.forEach((element) => {
+    data1.forEach((event) => {
+      if (element.id == event.id) {
+        sprice += event.price * element.qut;
+      }
+    });
+  });
 
-//   subpcontainer.innerHTML = `
-//   <div class="cartsprice">
-//   <p>Subtotal</p>
-//   <p>₹${
-//     (sprice,
-//     sprice >= 1000 ? "Free" : "Flat",
-//     sprice ? (sprice >= 1000 ? 0 : 250) : 0,
-//     sprice + (sprice >= 1000 ? 0 : sprice ? (sprice >= 1000 ? 0 : 250) : 0),
-//     Math.floor(
-//       ((sprice + (sprice ? (sprice >= 1000 ? 0 : 250) : 0)) / 100) * 18
-//     ),
-//     Math.floor((sprice + (sprice ? (sprice >= 1000 ? 0 : 250) : 0)) / 3))
-//   } 
-//    </p>
-//    </div>`;
-// }
-// showsubtotalcart();
+  subpcontainer.innerHTML = `
+  <div class="cartsprice">
+  <p>Subtotal</p>
+  <p>₹${
+    (sprice,
+    sprice >= 1000 ? "Free" : "Flat",
+    sprice ? (sprice >= 1000 ? 0 : 250) : 0,
+    sprice + (sprice >= 1000 ? 0 : sprice ? (sprice >= 1000 ? 0 : 250) : 0),
+    Math.floor(
+      ((sprice + (sprice ? (sprice >= 1000 ? 0 : 250) : 0)) / 100) * 18
+    ),
+    Math.floor((sprice + (sprice ? (sprice >= 1000 ? 0 : 250) : 0)) / 3))
+  } 
+   </p>
+   </div>`;
+}
+showsubtotalcart();
