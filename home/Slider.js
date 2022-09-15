@@ -1,15 +1,10 @@
 images = [
-  "./img3/9.jpg",
-  "./img3/8.jpg",
-  "./img3/7.jpg",
-  "./img3/6.jpg",
-  "./img3/5.jpg",
-  "./img3/4.jpg",
-  "./img3/3.jpg",
-  "./img3/4.jpg",
-  "./img3/10.jpg",
-];
+  "./img3/JORDAN-YELLOW.jpg",
+  "./img3/JORDAN-12-STEALTH.jpg",
+  "./img3/asics-banner.jpg",
+  "./img3/AIR-FORCE-1-LOW-RETRO-‘COLOUR-OF-THE-MONTH-3.jpg",
 
+];
 
 let index = 0;
 
