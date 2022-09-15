@@ -71,20 +71,7 @@ function loginuser(el){
             let z= e.emailId.slice(0,-10)
 
             localStorage.setItem("userName",z)
-            // console.log(z)
-            
-            // userpage.innerHTML=`
-            // <section class="profile">
-
-            // <h1>Welcome ${(e.emailId.slice(0,-10))}</h1>
-            //   </section>
-        
-            // `
-
-            // console.log(el.target)
-            // console.log("done")
-            // e.target.setAttribute("href","./myaccount.html")
-            // console.log(el.target)
+          
         }
         // console.log("dgff")
     })
