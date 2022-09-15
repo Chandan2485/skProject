@@ -40,42 +40,42 @@ if(e.target.id==data1[i].id){
  
 
 
-function showcart() {
- for(let i =0; i<datastorearr.length; i++){
-  let popup = `
+// function showcart() {
+//  for(let i =0; i<datastorearr.length; i++){
+//   let popup = `
     
-       <div class="delete_items" >
-       <h2 class="cancelation_btn2" onclick="removeitems(event)" value=${datastorearr[i].id}>${"&times;"}</h2>
-           <p class="brandname">${datastorearr[i].title}</p>
-           <a href="">
-           <img class="finalbillcart" src="${datastorearr[i].category.image}" alt="">
-           </a>
-        </div>
+//        <div class="delete_items" >
+//        <h2 class="cancelation_btn2" onclick="removeitems(event)" value=${datastorearr[i].id}>${"&times;"}</h2>
+//            <p class="brandname">${datastorearr[i].title}</p>
+//            <a href="">
+//            <img class="finalbillcart" src="${datastorearr[i].category.image}" alt="">
+//            </a>
+//         </div>
 
      
-       `;
-       checkout_content.innerHTML += popup;
-      }
- }
+//        `;
+//        checkout_content.innerHTML += popup;
+//       }
+//  }
       
   
 
-showcart();
+// showcart();
 
-addcbtn.addEventListener("click", showpoup);
+// addcbtn.addEventListener("click", showpoup);
 
-function showpoup() {
-  checkout_container.classList.remove("hide");
-  showcart();
+// function showpoup() {
+//   checkout_container.classList.remove("hide");
+//   showcart();
   
-}
+// }
 
-removebut1.addEventListener("click", hidepopup);
+// removebut1.addEventListener("click", hidepopup);
 
-function hidepopup() {
-  checkout_container.classList.add("hide");
+// function hidepopup() {
+//   checkout_container.classList.add("hide");
   // div.classList.add("blur")
-}
+// }
 
 // function removeitems(event) {
 //   console.log(event.id);
@@ -109,31 +109,31 @@ function hidepopup() {
 
 // removeitems()
 
-function showsubtotalcart() {
-  let sprice = 0;
+// function showsubtotalcart() {
+//   let sprice = 0;
 
- data1.forEach((element) => {
-    data1.forEach((event) => {
-      if (element.id == event.id) {
-        sprice += event.price * element.qut;
-      }
-    });
-  });
+//  data1.forEach((element) => {
+//     data1.forEach((event) => {
+//       if (element.id == event.id) {
+//         sprice += event.price * element.qut;
+//       }
+//     });
+//   });
 
-  subpcontainer.innerHTML = `
-  <div class="cartsprice">
-  <p>Subtotal</p>
-  <p>₹${
-    (sprice,
-    sprice >= 1000 ? "Free" : "Flat",
-    sprice ? (sprice >= 1000 ? 0 : 250) : 0,
-    sprice + (sprice >= 1000 ? 0 : sprice ? (sprice >= 1000 ? 0 : 250) : 0),
-    Math.floor(
-      ((sprice + (sprice ? (sprice >= 1000 ? 0 : 250) : 0)) / 100) * 18
-    ),
-    Math.floor((sprice + (sprice ? (sprice >= 1000 ? 0 : 250) : 0)) / 3))
-  } 
-   </p>
-   </div>`;
-}
-showsubtotalcart();
+//   subpcontainer.innerHTML = `
+//   <div class="cartsprice">
+//   <p>Subtotal</p>
+//   <p>₹${
+//     (sprice,
+//     sprice >= 1000 ? "Free" : "Flat",
+//     sprice ? (sprice >= 1000 ? 0 : 250) : 0,
+//     sprice + (sprice >= 1000 ? 0 : sprice ? (sprice >= 1000 ? 0 : 250) : 0),
+//     Math.floor(
+//       ((sprice + (sprice ? (sprice >= 1000 ? 0 : 250) : 0)) / 100) * 18
+//     ),
+//     Math.floor((sprice + (sprice ? (sprice >= 1000 ? 0 : 250) : 0)) / 3))
+//   } 
+//    </p>
+//    </div>`;
+// }
+// showsubtotalcart();
