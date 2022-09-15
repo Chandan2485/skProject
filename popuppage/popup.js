@@ -40,42 +40,42 @@ if(e.target.id==data1[i].id){
  
 
 
-// function showcart() {
-//  for(let i =0; i<datastorearr.length; i++){
-//   let popup = `
+function showcart() {
+ for(let i =0; i<datastorearr.length; i++){
+  let popup = `
     
-//        <div class="delete_items" >
-//        <h2 class="cancelation_btn2" onclick="removeitems(event)" value=${datastorearr[i].id}>${"&times;"}</h2>
-//            <p class="brandname">${datastorearr[i].title}</p>
-//            <a href="">
-//            <img class="finalbillcart" src="${datastorearr[i].category.image}" alt="">
-//            </a>
-//         </div>
+       <div class="delete_items" >
+       <h2 class="cancelation_btn2" onclick="removeitems(event)" value=${datastorearr[i].id}>${"&times;"}</h2>
+           <p class="brandname">${datastorearr[i].title}</p>
+           <a href="">
+           <img class="finalbillcart" src="${datastorearr[i].category.image}" alt="">
+           </a>
+        </div>
 
      
-//        `;
-//        checkout_content.innerHTML += popup;
-//       }
-//  }
+       `;
+       checkout_content.innerHTML += popup;
+      }
+ }
       
   
 
-// showcart();
+showcart();
 
-// addcbtn.addEventListener("click", showpoup);
+addcbtn.addEventListener("click", showpoup);
 
-// function showpoup() {
-//   checkout_container.classList.remove("hide");
-//   showcart();
+function showpoup() {
+  checkout_container.classList.remove("hide");
+  showcart();
   
-// }
+}
 
-// removebut1.addEventListener("click", hidepopup);
+removebut1.addEventListener("click", hidepopup);
 
-// function hidepopup() {
-//   checkout_container.classList.add("hide");
-  // div.classList.add("blur")
-// }
+function hidepopup() {
+  checkout_container.classList.add("hide");
+  div.classList.add("blur")
+}
 
 // function removeitems(event) {
 //   console.log(event.id);

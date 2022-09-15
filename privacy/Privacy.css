@@ -1,16 +1,22 @@
 body{
+   box-sizing: border-box;
+    font-family: sans-serif;
+}
+.prsection{
     margin:0 40px 40px 40px;
     width: 75vw;
-    font-family: sans-serif;
 }
 .aprivacy{
     text-decoration: none;
+    font-size: medium;
+    color: grey;
 }
 
 .h1privacy{
     margin-top: 20px;
     margin-bottom: 50px;
     font-weight: lighter;
+    font-size: 15px;
 }
 
 .h2privacy{
