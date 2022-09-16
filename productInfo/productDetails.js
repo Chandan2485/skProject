@@ -135,7 +135,7 @@ function addproducttocartarray(e){
             let str1=JSON.stringify(cartArray)
             localStorage.setItem("a",str1)
         }
-        // localStorage.getItem("a")
+        localStorage.getItem("a")
       
         
     }
@@ -144,7 +144,7 @@ function addproducttocartarray(e){
     bag.innerText=cart.length
     console.log(  document.getElementById("all_cartitem"));
     
-    // console.log(cart);
+    console.log(cart);
     let Totalprice = document.querySelector(".counter");
     let TotalPeoduct=JSON.parse(localStorage.getItem("apiData"))
     let headerprice = 0
@@ -166,22 +166,22 @@ function addproducttocartarray(e){
                      </div>`
             }
             
-    //         document.getElementById("all_cartitem").innerHTML+=` 
+            document.getElementById("all_cartitem").innerHTML+=` 
                
-            //    <div class="delete_items" >
-            //    <h2 class="cancelation_btn2" value=${e.id}>${"&times;"}</h2>
-                //    <p class="brandname">${e.title}</p>
-                //    <a href="">
-                //    <img class="finalbillcart" src="${e.category.image}" alt="">
-                //    </a>
-                // </div>`
+               <div class="delete_items" >
+               <h2 class="cancelation_btn2" value=${e.id}>${"&times;"}</h2>
+                   <p class="brandname">${e.title}</p>
+                   <a href="">
+                   <img class="finalbillcart" src="${e.category.image}" alt="">
+                   </a>
+                </div>`
 
     
         })
     
     })
-    // document.querySelector(".subp").innerHTML=headerprice
-    // console.log(headerprice)
+    document.querySelector(".subp").innerHTML=headerprice
+    console.log(headerprice)
     Totalprice.innerText=headerprice
 
 }
@@ -189,57 +189,57 @@ function addproducttocartarray(e){
 
 
 
-// let popupbox=document.querySelector(".checkout_boxp")
-// let cancelbtn=document.querySelector(".cancelation_btn1")
-// let addbox=document.querySelector(".bag")
-// cancelbtn.addEventListener("click",removebox)
+let popupbox=document.querySelector(".checkout_boxp")
+let cancelbtn=document.querySelector(".cancelation_btn1")
+let addbox=document.querySelector(".bag")
+cancelbtn.addEventListener("click",removebox)
 
-// addbox.addEventListener("click",addbox1)
+addbox.addEventListener("click",addbox1)
 
-// function removebox(){
-//     popupbox.classList.add("hide")
-// }
-// let popupcontainer=document.getElementById("all_cartitem")
-// function addbox1(){
-//     popupbox.classList.remove("hide")
+function removebox(){
+    popupbox.classList.add("hide")
+}
+let popupcontainer=document.getElementById("all_cartitem")
+function addbox1(){
+    popupbox.classList.remove("hide")
 
-//     let popuparr=JSON.parse(localStorage.getItem("a"))
-//     document.getElementById("all_cartitem").innerHTML=null
-//     popuparr.forEach(element => {
-//         data.forEach(e=>{
-//             if (element.id == e.id) {
-//                 // headerprice += (e.price * element.qut)
-//                 popupcontainer.innerHTML+=` 
+    let popuparr=JSON.parse(localStorage.getItem("a"))
+    document.getElementById("all_cartitem").innerHTML=null
+    popuparr.forEach(element => {
+        data.forEach(e=>{
+            if (element.id == e.id) {
+                // headerprice += (e.price * element.qut)
+                popupcontainer.innerHTML+=` 
                 
-//                 <div class="delete_items" >
-//                 <h2 class="cancelation_btn2" value=${e.id}>${"&times;"}</h2>
-//                     <p class="brandname">${e.title}</p>
-//                     <a href="">
-//                     <img class="finalbillcart" src="${e.category.image}" alt="">
-//                     </a>
-//                  </div>`
-//             }
-//         })
-//     });
-// }
+                <div class="delete_items" >
+                <h2 class="cancelation_btn2" value=${e.id}>${"&times;"}</h2>
+                    <p class="brandname">${e.title}</p>
+                    <a href="">
+                    <img class="finalbillcart" src="${e.category.image}" alt="">
+                    </a>
+                 </div>`
+            }
+        })
+    });
+}
 
-// popupcontainer.addEventListener("click",removecart)
+popupcontainer.addEventListener("click",removecart)
 
-// function removecart(){
-//     if (e.target.classList[0] == "cancelation_btn2") {
+function removecart(){
+    if (e.target.classList[0] == "cancelation_btn2") {
 
-//         newArr = cartdata.filter((x) => x.id != e.target.id)
-//         cartdata = newArr
+        newArr = cartdata.filter((x) => x.id != e.target.id)
+        cartdata = newArr
 
-//         let str1 = JSON.stringify(newArr)
-//         localStorage.setItem("a", str1)
+        let str1 = JSON.stringify(newArr)
+        localStorage.setItem("a", str1)
 
-//         CartItems.innerHTML = ""
-//         cartTotal.innerHTML = ""
-//         cartSubtotalShow()
-//         cartItemShow()
-//     }
-// }
+        CartItems.innerHTML = ""
+        cartTotal.innerHTML = ""
+        cartSubtotalShow()
+        cartItemShow()
+    }
+}
 
 
 

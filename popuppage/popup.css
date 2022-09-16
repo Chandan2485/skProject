@@ -5,9 +5,9 @@
 }
 
 .checkout_boxp{
-   width: 30%;
+   min-width: 27%;
    background-color: lightseagreen;
-   height: 100vh;
+   min-height: 100vh;
    border: none;
    position: absolute;
    right: 0%;

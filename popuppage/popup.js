@@ -77,37 +77,37 @@ function hidepopup() {
   div.classList.add("blur")
 }
 
-// function removeitems(event) {
-//   console.log(event.id);
-  //data1.forEach((element) => {
-  //   if (element.id == event.target.id) {
-  //     newArr =data1.filter((x) => x.id != event.target.id);
-  //    data1 = newArr;
+function removeitems(event) {
+  console.log(event.id);
+  data1.forEach((element) => {
+    if (element.id == event.target.id) {
+      newArr =data1.filter((x) => x.id != event.target.id);
+     data1 = newArr;
 
-  //     let str1 = JSON.stringify(newArr);
-  //     localStorage.setItem("a", str1);
+      let str1 = JSON.stringify(newArr);
+      localStorage.setItem("a", str1);
 
-  //     cartitmesv.innerHTML = "";
-  //     checkout_container.innerHTML = "";
-  //   } else if (event.target.src) {
-  //     localStorage.setItem(
-  //       "x",
-  //       event.target.parentElement.previousElementSibling.id
-  //     );
-  //   }
-  // });
-//   newArr =data1.filter((x) => x.id != event.target.id);
-//  data1 = newArr;
+      cartitmesv.innerHTML = "";
+      checkout_container.innerHTML = "";
+    } else if (event.target.src) {
+      localStorage.setItem(
+        "x",
+        event.target.parentElement.previousElementSibling.id
+      );
+    }
+  });
+  newArr =data1.filter((x) => x.id != event.target.id);
+ data1 = newArr;
 
-//   let str1 = JSON.stringify(newArr);
-//   localStorage.setItem("a", str1);
+  let str1 = JSON.stringify(newArr);
+  localStorage.setItem("a", str1);
 
-  // cartitmesv.innerHTML = "";
-  // checkout_container.innerHTML = "";
-//   showcart();
-// }
+  cartitmesv.innerHTML = "";
+  checkout_container.innerHTML = "";
+  showcart();
+}
 
-// removeitems()
+removeitems()
 
 // function showsubtotalcart() {
 //   let sprice = 0;

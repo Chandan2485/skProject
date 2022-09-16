@@ -3,13 +3,14 @@ body{
     font-family: sans-serif;
 }
 .prsection{
-    margin:0 40px 40px 40px;
-    width: 75vw;
+
+    width: 100%;
 }
 .aprivacy{
     text-decoration: none;
     font-size: medium;
     color: grey;
+    padding:50px 50px 0 50px;
 }
 
 .h1privacy{
