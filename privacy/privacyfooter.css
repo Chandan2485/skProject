@@ -274,8 +274,8 @@ span {
     justify-content: space-between;
     margin-top: 150px;
     /* align-items: center; */
-    min-width: 100%;
-    min-height: 200px;
+    min-width: 100vh;
+    min-height: 50px;
     /* font-size: 1rem; */
     padding: 30px;
     background-color: rgba(0, 0, 0, 0.932);

@@ -1,65 +1,24 @@
-body{
-   box-sizing: border-box;
-    font-family: sans-serif;
-}
-.prsection{
 
-    width: 100%;
-}
 .aprivacy{
     text-decoration: none;
     font-size: medium;
-    color: grey;
-    padding:50px 50px 0 50px;
+    color: black;
+  
 }
 
-.h1privacy{
-    margin-top: 20px;
-    margin-bottom: 50px;
-    font-weight: lighter;
-    font-size: 15px;
-}
 
-.h2privacy{
-    margin-top: 10px;
-    margin-bottom: 70px;
-    font-size: 50px;
-    line-height: 1.5;
-}
 
-.h3privacy{
-    margin: 15px;
-    font-size: 30px;
-}
 
-p{
-    margin: 10px;
-    line-height: 1.5;
-    font-style: normal;
+
+
+.prsection{
+    width: 70vw;
+    margin: 50px;
     text-align: justify;
-    margin: 0 0 1.41575em;
 }
-
-.ulprivacy{
-    margin: 15px;
+.prsection article{
+    margin: 20px;
 }
-
-.article1,.article2,.article3,.article4,.article5,.article6,.article7,.article8{
-    line-height: 1.5;
-    margin: 10px;
-}
-
-.navprivacy{
-    
-    margin:10px ;
-}
-
-.liprivacy{
-   
-    margin-left: 25px;
-}
-
-.nav_container{
-    margin: 40px;
-    font-size: 25px;
+.prsection article h3{
+    margin:15px 0;
 }

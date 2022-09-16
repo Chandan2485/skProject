@@ -28,6 +28,7 @@ function showSelectProduct(){
                   <img class="smallimg" src="${e.images[1]}" alt="">
                   <img class="smallimg" src="${e.images[2]}" alt="">
               </section>
+              
               <section class="product-img">
                   <img class="zoomimg"src="${e.category.image}" alt="">
               </section>

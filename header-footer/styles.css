@@ -274,8 +274,8 @@ span {
     justify-content: space-between;
     margin-top: 150px;
     /* align-items: center; */
-    min-width: 150%;
-    min-height: 200px;
+  width: 100vw;
+  height: 400px;
     /* font-size: 1rem; */
     padding: 30px;
     background-color: rgba(0, 0, 0, 0.932);
@@ -288,7 +288,7 @@ span {
 }
 
 .box1{
-    width: 200px;
+    /* width: 200px; */
     padding: 10px;
 }
 
@@ -300,8 +300,8 @@ span {
 .footerbox a{
     text-decoration: none;
     color: rgb(161, 159, 159);
-    font-size: 1.5rem;
-    line-height: 2;
+    font-size: 1.2rem;
+    /* line-height: 2; */
 }
 
 .footerbox .para{
